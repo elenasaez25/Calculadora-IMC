@@ -1,5 +1,9 @@
 package com.calculadora.imc.controller;
 
+/**
+ * @author Elena Sáez Lascurain
+ */
+
 import com.calculadora.imc.model.CalculadoraIMC;
 import com.calculadora.imc.view.VistaIMC;
 import java.awt.Color;
