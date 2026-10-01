@@ -1,12 +1,24 @@
 package com.calculadora.imc.model;
 
+/**
+ * @author Elena Sáez Lascurain
+ */
+
 public class CalculadoraIMC {
 
     public double calcular(double peso, double altura) {
-        return 0;
+        return peso / (altura * altura);
     }
 
     public String clasificar(double imc) {
-        return null;
+        if (imc < 18.5) {
+            return "Bajo Peso";
+        } else if (imc < 25.0) {
+            return "Peso Normal";
+        } else if (imc < 30.0) {
+            return "Sobrepeso";
+        } else {
+            return "Obesidad";
+        }    
     }
 }
