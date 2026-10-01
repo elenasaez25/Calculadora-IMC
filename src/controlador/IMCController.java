@@ -69,6 +69,11 @@ public class IMCController implements ActionListener {
             mostrarError("Error: Peso y altura deben ser mayores que 0");
             return;
         }
+        
+        if (altura > 3) {
+            mostrarError("Error: La altura debe ir en metros (ej. 1,75)");
+            return;
+        }
 
         double imc = calculadora.calcular(peso, altura);
         String clasificacion = calculadora.clasificar(imc);
