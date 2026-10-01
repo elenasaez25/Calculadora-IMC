@@ -1,15 +1,15 @@
 package com.calculadora.imc.view;
-
-import javax.swing.JFrame;
-import javax.swing.JTextField;
-import javax.swing.JButton;
-import javax.swing.JLabel;
+/**
+ * @author Elena Sáez Lascurain
+ */
 
 // Extiende JFrame: esta clase ES una ventana, no solo la contiene
 public class VistaIMC extends JFrame {
 
     public VistaIMC() {
-        initComponents(); // Crea y coloca los componentes (lo genera Matisse)
+        initComponents(); //crea y coloca los componentes (lo genera Matisse)
+        pack(); //ajusta la ventana al tamaño de sus componentes
+        setLocationRelativeTo(null); //la centra en la pantalla
     }
 
     // Getters: el controlador no puede tocar los componentes directamente
@@ -38,10 +38,4 @@ public class VistaIMC extends JFrame {
         // Generado por el diseñador de NetBeans (Matisse).
         // No se edita a mano: se sobrescribe cada vez que guardas en Design
     }
-
-    private JTextField txtPeso;
-    private JTextField txtAltura;
-    private JButton btnCalcular;
-    private JLabel lblResultado;
-    private JLabel lblClasificacion;
 }
