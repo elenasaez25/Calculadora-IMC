@@ -1,5 +1,9 @@
 package com.calculadora.imc.main;
 
+/**
+ * @author Elena Sáez Lascurain
+ */
+
 // Punto de entrada del programa: aquí empieza a ejecutarse la aplicación
 public class App {
     public static void main(String[] args) {
